@@ -121,7 +121,62 @@ class Main {
   }
 }
 
-//Refait de manière plus pertinente pour l'utilisateur:
 
+//Refait avec + et -
+
+import java.util.Scanner;
+
+class Main {  
+  public static void main(String args[]) { 
+
+   System.out.println("souhaitez-vous faire une addition ou une multiplication (+ : addition, - :soustraction)");
+    Character x;
+    Scanner scan = new Scanner(System.in);
+	  x=scan.nextLine().charAt(0);
+
+    if (!x.equals('+') && !x.equals('-'))
+{System.out.println("vous devez choisir + ou -");
+  return;}
+    
+  System.out.println("Ecrivez 1 chiffre");
+     int a,b;
+      a=scan.nextInt();
+
+    System.out.println("Ecrivez 1 2e chiffre"); 
+      b=scan.nextInt();
+  
+     
+    if (x.equals('+'))
+      {System.out.println(a+b);}
+	  else if (x.equals('-'))
+    {System.out.println(a-b);}
+	  else
+	  {System.out.println("vous devez choisir + ou -");}
+
+    
+        } 
+  }
+
+
+//Comparaison de 2 string
+//Attention, pour les string on met " et ' pour un character
+import java.util.Scanner;
+
+
+class Main {  
+  public static void main(String args[]) { 
+
+   System.out.println("Ecrivez Albert");
+    String x;
+    Scanner scan = new Scanner(System.in);
+	  x=scan.nextLine();
+
+    if (x.equals("Albert"))
+        {System.out.println("Vous avez écrit Albert");}
+ else  {System.out.println("Vous ne savez pas écrire Albert");}
+
+   
+   }
+  }
 
 
