@@ -1,2 +1,4 @@
 # JAVA
-Quelques programmes en JAVA/JEE
+-Initiation à la programmation JAVA
+-Création/Interrogation de tables SQL
+-Programmation orienté objet en Java
